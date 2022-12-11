@@ -1,0 +1,513 @@
+@font-face {
+    font-family: 'Gilroy Semibold';
+    src: url('Gilroy-SemiBold.eot');
+    src: url('Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy-SemiBold.ttf') format('woff'),
+    url('../fonts/Gilroy-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    background-color: #F2F0EB;
+    padding: 0px;
+    margin: 0px;
+
+    font-family: "Gilroy Semibold", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+button{
+    font-family: "Gilroy Semibold", Arial, Helvetica, sans-serif;
+}
+
+p{
+    margin: 0%;
+}
+
+/* Початок блоку шапки */
+
+header{
+    background-color: #006241;
+    width: 100%;
+    height: 70px;
+    margin: 0px;
+    padding: 0px 10%;
+    box-shadow: 0px 1px 5px 0px #00000080;
+
+
+    display: flex;
+
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 9999;
+}
+
+.header__logo {
+    width: 20%; 
+    display: flex;
+    align-items: center;
+}
+
+.logo-pic{
+    height: 80%;
+    max-height: 50px;
+}
+
+nav {
+    width: 100%;
+    color: #fff;
+    padding: 0% 5%;
+
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    font-size: 16px;
+
+    margin-right: 3%;
+
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    scale: 1;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: #FC6742;
+    scale: 1.1;
+}
+
+@media screen and (max-width: 768px) {
+    .nav__text {
+        font-size: 12px;
+    }
+}
+
+/* Кінець блоку шапки */
+
+
+
+.poster{
+    background: url(../img/poster.jpg) center no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.poster__descriptions {
+    background-color: #000000a2;
+    margin: auto 0;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0px 0px 10px 5px #00000080;
+}
+
+.poster__descriptions p {
+    font-size: 18px;
+}
+
+.poster h1 {
+    font-size: 75PX;
+
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .poster__descriptions p {
+        font-size: 14px;
+    }
+
+    .poster__descriptions h1 {
+        font-size: 30px;
+    }
+}
+
+
+
+
+.type_1{
+    background-color: #006241;
+    color: #fff;
+}
+
+.type_2{
+    background-color: #f8eaca;
+}
+
+.block{
+    width: 100%;
+    min-height: 350px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.block_content{
+    display: flex;
+    align-items: center; 
+    margin: 0px auto;
+    width: 80%;
+}
+
+.block img{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.text{
+    max-width: 70;
+    text-align: justify;
+}
+
+.content {
+    width: 30%;
+    min-width: 300px;
+    height: max-content;
+    padding-left: 5%;
+}
+
+.content img{
+    width: 100%;
+    height: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+    .block_content {
+        flex-direction: column-reverse;
+    }
+}
+
+.button{
+    width: 100%;
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.button button{
+    text-decoration: none;
+
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+
+    border-radius: 100px;
+    border-width: 0px ;
+}
+
+.b_type_1{
+    background-color: #073a29;
+    color: #fff;
+
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    cursor: pointer;
+    scale: 1;
+}
+
+.b_type_1:hover {
+    background-color: #fff;
+    color: #073a29;
+
+    scale: 1.1;
+}
+
+.button a{
+    border-radius: 100px;
+}
+
+
+
+
+/* Початок блоку сорти кави */
+
+.coffee_type-block {
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: #f8eaca;
+}
+
+.coffee_type-container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.coffee_type-head {
+    margin-bottom: 25px;
+}
+
+.coffee_type {
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+}
+
+.coffee_type-content {
+    color: #073a29;
+    width: 100%;
+    border: 1px solid #006241;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    scale: 1;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .coffee_type {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.coffee_type-content p {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+
+    margin-top: 15px;
+}
+
+.coffee_type-content:hover {
+    background-color: #006241;
+    color: #fff;
+
+    scale: 1.1;
+}
+
+.coffee_type-pic {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+}
+
+.more_type_coffee {
+    background-color: #073a29;
+    margin-top: 20px;
+    padding: 7px;
+    border-radius: 100px;
+
+    color: #fff;
+    font-size: 14px;
+
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Кінець блоку сорти кави */
+
+
+
+/* Початок блоку як роблять каву */
+
+.text p {
+    margin-bottom: 15px;
+}
+
+/* Кінець блоку як роблять каву */
+
+
+/* Початок блоку рецепти */
+
+.recipes__container {
+    width: 80%;
+    display: flex;
+    margin: 0px auto;
+}
+
+.recipes__text {
+    text-align: justify;
+}
+
+.recipes__img {
+    width: 30%;
+    min-width: 300px;
+    padding-left: 5%;
+}
+
+.recipes__img img {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .recipes__container {
+        flex-direction: column-reverse;
+    }
+}
+
+/* Кінець блоку рецепти */
+
+.img {
+    scale: 1;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.img:hover {
+    scale: 1.2;
+}
+
+
+
+/* Початок документу сорти кави */
+
+main {
+    background: #f8eaca;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.main__content {
+    width: 100%;
+}
+
+.main-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-logo img {
+    max-width: 25%;
+    min-width: 200px;
+}
+
+.main__block-poster {
+    width: 100%;
+    height: auto;
+}
+
+.main__block-poster img {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main__block-type-1 {
+    text-align: justify;
+
+    width: 100%;
+    padding: 50px 10%;
+    padding-bottom: 75px;
+    z-index: 10;
+}
+
+.main__block-type-2 {
+    text-align: justify;
+
+    background-color: #006241;
+    color: #fff;
+
+    width: 100%;
+    padding: 50px 10%;
+    padding-bottom: 75px;
+    z-index: 20;
+    box-shadow: 0px 0px 4px 0px #00000080;
+}
+
+/* Кінець документу сорти кави */
+
+
+
+
+/* footer */
+
+footer {
+    background-color: #073a29;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.footer__content {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__content div {
+    min-width: 300px;
+}
+
+.web-site-name {
+    width: 40%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.web-site-name p {
+    color: #537b6f;
+}
+
+.pages {
+    width: 30%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+footer h3 {
+    color: #9fd3c1;
+}
+
+.pages p a, .contact p a  {
+    color: #537b6f;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.pages p a:hover, .contact p a:hover {
+    color: #9fd3c1;
+}
+
+.pages p, .contact p {
+    margin-bottom: 5px;
+}
+
+.contact {
+    width: 30%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
